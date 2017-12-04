@@ -1,8 +1,6 @@
 declare
     n number;
-    
-i
- number;
+    i number;
     flag number;
  
 begin
