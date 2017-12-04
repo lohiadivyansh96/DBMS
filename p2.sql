@@ -5,12 +5,12 @@ declare
 
 
 begin
-	--open c1;
-	--loop
-	--fetch c1 into v_c1;
-	--exit when c1%notfound;
-	--dbms_output.put_line('ssn: '||v_c1.ssn||' name: '||v_c1.name||' deptno: '||v_c1.deptno||' salary: '||v_c1.salary);
-	--dbms_output.put_line(SQL%ROWCOUNT);
+	open c1;
+	loop
+	fetch c1 into v_c1;
+	exit when c1%notfound;
+	dbms_output.put_line('ssn: '||v_c1.ssn||' name: '||v_c1.name||' deptno: '||v_c1.deptno||' salary: '||v_c1.salary);
+	dbms_output.put_line(SQL%ROWCOUNT);
 	
 	
 	UPDATE emp
